@@ -5,27 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Salvatore Megna — Data Scientist</title>
   <meta name="description" content="Portfolio progetti di Salvatore Megna (Data Science / Machine Learning)." />
+
   <style>
     :root{
-      --bg:#ffffff; --text:#0f172a; --muted:#475569; --border:#e2e8f0;
-      --accent:#2563eb; --card:#ffffff; --shadow:0 10px 30px rgba(15,23,42,.08);
+      --bg:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --border:#e2e8f0;
+      --accent:#2563eb;
+      --card:#ffffff;
+      --shadow:0 10px 30px rgba(15,23,42,.08);
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);line-height:1.55}
-    .wrap{max-width:980px;margin:0 auto;padding:40px 20px}
-    h1{margin:0 0 8px;font-size:44px;letter-spacing:-.02em}
-    .role{margin:0 0 10px;font-weight:700;color:var(--accent)}
-    .sub{margin:0 0 18px;color:var(--muted);max-width:75ch}
-    .links a{display:inline-block;margin:0 10px 10px 0;padding:9px 14px;border:1px solid var(--border);border-radius:999px;color:var(--text);text-decoration:none;background:#fff}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:42px 20px}
+    h1{margin:0 0 8px;font-size:46px;letter-spacing:-.02em}
+    .role{margin:0 0 10px;font-weight:800;color:var(--accent)}
+    .sub{margin:0 0 18px;color:var(--muted);max-width:78ch}
+
+    .links a{
+      display:inline-block;
+      margin:0 10px 10px 0;
+      padding:9px 14px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:var(--text);
+      text-decoration:none;
+      background:#fff;
+    }
     .links a:hover{border-color:var(--accent);color:var(--accent)}
-    h2{margin:30px 0 14px;font-size:22px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+
+    h2{margin:34px 0 14px;font-size:22px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:16px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      min-height: 210px;
+    }
     .card h3{margin:0 0 10px;font-size:18px}
     .card p{margin:0 0 12px;color:var(--muted)}
-    .tag{display:inline-block;font-size:12px;border:1px solid var(--border);padding:4px 9px;border-radius:999px;color:var(--muted);margin:0 6px 8px 0;background:#f8fafc}
-    .card a{display:inline-block;margin:6px 12px 0 0;color:var(--accent);text-decoration:none;font-weight:700}
+    .tag{
+      display:inline-block;
+      font-size:12px;
+      border:1px solid var(--border);
+      padding:4px 9px;
+      border-radius:999px;
+      color:var(--muted);
+      margin:0 6px 8px 0;
+      background:#f8fafc;
+    }
+    .card a{
+      display:inline-block;
+      margin-top:8px;
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:800;
+    }
     .card a:hover{text-decoration:underline}
+
     footer{color:var(--muted);margin-top:26px}
   </style>
 </head>
@@ -34,10 +85,16 @@
   <header class="wrap">
     <h1>Salvatore Megna</h1>
     <div class="role">Data Scientist · Machine Learning</div>
-    <p class="sub">Portfolio progetti: Machine Learning, Network Analysis, Sustainable Finance (ESG).</p>
+    <p class="sub">
+      Portfolio progetti: Machine Learning, Network Analysis, Sustainable Finance (ESG).
+    </p>
+
     <div class="links">
       <a href="https://github.com/Salvatore-Megna" target="_blank" rel="noreferrer">GitHub</a>
       <a href="mailto:totimegna@hotmail.it">Email</a>
+      <!-- Se vuoi aggiungere LinkedIn:
+      <a href="https://www.linkedin.com/in/..." target="_blank" rel="noreferrer">LinkedIn</a>
+      -->
     </div>
   </header>
 
@@ -45,31 +102,47 @@
     <h2>Progetti</h2>
 
     <div class="grid">
+      <!-- PROGETTO 1 -->
       <article class="card">
-        <h3>Predizione diabete (RF & Gradient Boosting)</h3>
+        <h3>Predizione diabete (RF &amp; Gradient Boosting)</h3>
         <p>Training/test split, tuning e valutazione con metriche di classificazione.</p>
-        <span class="tag">R</span><span class="tag">Random Forest</span><span class="tag">Gradient Boosting</span>
+        <span class="tag">R</span>
+        <span class="tag">Random Forest</span>
+        <span class="tag">Gradient Boosting</span>
+        <br />
         <a href="projects/diabete/">Apri progetto</a>
       </article>
 
+      <!-- PROGETTO 2 -->
       <article class="card">
-        <h3>Effetto trascinamento: rete bipartita elezioni</h3>
-        <p>Costruzione rete bipartita e analisi del trascinamento/relazioni tra voti.</p>
-        <span class="tag">Python</span><span class="tag">Network</span><span class="tag">Bipartite</span>
+        <h3>Analisi elezioni tramite rete bipartita</h3>
+        <p>Costruzione rete bipartita e analisi delle relazioni tra voti.</p>
+        <span class="tag">Python</span>
+        <span class="tag">Network</span>
+        <span class="tag">Bipartite</span>
+        <br />
         <a href="projects/rete-bipartita/">Apri progetto</a>
       </article>
 
+      <!-- PROGETTO 3 -->
       <article class="card">
-        <h3>ESG come predittore di performance (USA/EU + contesto geopolitico)</h3>
-        <p>Analisi ESG e performance nel settore energia, confronto USA/EU e periodi politico-regolatori.</p>
-        <span class="tag">Python</span><span class="tag">ESG</span><span class="tag">Finance</span>
+        <h3>Indici ESG come predittori di performance: confronto USA-EU</h3>
+        <p>Analisi ESG e performance nel settore energia, confronto USA/EU e contesto politico-regolatorio.</p>
+        <span class="tag">Python</span>
+        <span class="tag">ESG</span>
+        <span class="tag">Finance</span>
+        <br />
         <a href="projects/esg-performance/">Apri progetto</a>
       </article>
     </div>
 
-    <footer><small>© <span id="y"></span> Salvatore Megna</small></footer>
+    <footer>
+      <small>© <span id="y"></span> Salvatore Megna</small>
+    </footer>
   </main>
 
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
