@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salvatore Megna — Portfolio</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:#0b0f14;color:#e7eef7;line-height:1.5}
+    .wrap{max-width:960px;margin:0 auto;padding:34px 18px}
+    h1{margin:0 0 6px;font-size:38px}
+    .sub{color:#a8b3c2;margin:0 0 18px}
+    .links a{display:inline-block;margin:0 10px 10px 0;padding:8px 12px;border:1px solid #223044;border-radius:999px;color:#e7eef7;text-decoration:none}
+    .links a:hover{border-color:#6aa9ff}
+    h2{margin:26px 0 12px;font-size:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .card{background:#111824;border:1px solid #223044;border-radius:16px;padding:16px}
+    .card h3{margin:0 0 8px;font-size:17px}
+    .card p{margin:0 0 12px;color:#a8b3c2}
+    .tag{display:inline-block;font-size:12px;border:1px solid #223044;padding:4px 8px;border-radius:999px;color:#a8b3c2;margin:0 6px 8px 0}
+    .card a{color:#6aa9ff;text-decoration:none;margin-right:12px}
+    .card a:hover{text-decoration:underline}
+    footer{color:#a8b3c2;margin-top:26px}
+  </style>
+</head>
+
+<body>
+  <header class="wrap">
+    <h1>Salvatore Megna</h1>
+    <p class="sub">Portfolio progetti (Data Science / Quant / ML). Link a repository e report.</p>
+
+    <div class="links">
+      <a href="https://github.com/Salvatore-Megna" target="_blank" rel="noreferrer">GitHub</a>
+      <!-- Sostituisci con il tuo LinkedIn quando vuoi -->
+      <!-- <a href="https://www.linkedin.com/in/tuo-linkedin/" target="_blank" rel="noreferrer">LinkedIn</a> -->
+      <a href="mailto:totimegna@hotmail.it">Email</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>Progetti</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>ESG Energy Companies</h3>
+        <p>Analisi dell’impatto dei punteggi ESG su performance e rischio di aziende energetiche.</p>
+        <span class="tag">Python</span><span class="tag">Random Forest</span><span class="tag">Finanza</span><span class="tag">ESG</span><br/>
+        <!-- aggiorna il link quando crei la repo del progetto -->
+        <a href="#" title="Aggiungi il link al repo">Repo</a>
+        <!-- opzionale -->
+        <!-- <a href="#" target="_blank">Report</a> -->
+      </div>
+
+      <div class="card">
+        <h3>Diabetes ML (RF vs GBM)</h3>
+        <p>Confronto Random Forest e Gradient Boosting con tuning e metriche (F1, confusion matrix).</p>
+        <span class="tag">R</span><span class="tag">ML</span><span class="tag">Classification</span><br/>
+        <a href="#" title="Aggiungi il link al repo">Repo</a>
+      </div>
+
+      <div class="card">
+        <h3>Altri progetti</h3>
+        <p>Sezione pronta per aggiungere nuovi lavori man mano che li pubblichi.</p>
+        <span class="tag">In arrivo</span><br/>
+        <a href="#" title="Aggiungi il link al repo">Repo</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <small>© <span id="y"></span> Salvatore Megna</small>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
